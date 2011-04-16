@@ -51,8 +51,8 @@
 				<CustomBehavior File="FlightToggle" Flight="False" />
 				<CustomBehavior File="FlyTo" 
 				<CustomBehavior File="MyCTM" 
-				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 				<CustomBehavior File="UseItemOn" QuestId="" NpcId="" ItemId="" NumOfTimes="1" WaitTime="1000" Range="5" CollectionDistance="50" 
 				<CustomBehavior File="CombatUseItemOn" QuestId="" NpcId="" ItemId="" NumOfTimes="1" WaitTime="1000" NpcHPLeft="100" CollectionDistance="500" 
 				<CustomBehavior File="InteractWith" QuestId="" NpcId="" NumOfTimes="1" CollectionDistance="50" WaitTime="1000" 
@@ -78,10 +78,6 @@
 	
 	<QuestOrder>
 
-	
-	
-	
-	
 	
 	
 	

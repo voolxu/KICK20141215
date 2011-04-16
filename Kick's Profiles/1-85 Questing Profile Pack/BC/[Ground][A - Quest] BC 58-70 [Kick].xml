@@ -1197,6 +1197,40 @@
 			</Hotspots>
 		</Objective>
 	</Quest>
+	<Quest Id="10677" Name="The Second Course...">
+		<Objective Type="CollectItem" ItemId="30867" CollectCount="1">
+			<Hotspots>
+				<Hotspot X="-3908.786" Y="1138.147" Z="23.5929" />
+				<Hotspot X="-3886.255" Y="1096.386" Z="22.87655" />
+				<Hotspot X="-3848.19" Y="1033.085" Z="22.76328" />
+				<Hotspot X="-3835.933" Y="961.7689" Z="23.21333" />		
+			</Hotspots>
+		</Objective>
+	</Quest>
+	<Quest Id="10582" Name="Minions of the Shadow Council">
+		<Objective Type="KillMob" MobId="20878" KillCount="10">
+			<Hotspots>
+				<Hotspot X="-3230.348" Y="2128.324" Z="78.15877" />
+				<Hotspot X="-3277.802" Y="2121.49" Z="85.60871" />
+				<Hotspot X="-3273.299" Y="2055.246" Z="71.41824" />
+				<Hotspot X="-3295.857" Y="1983.767" Z="51.50095" />
+				<Hotspot X="-3350.91" Y="2003.947" Z="32.30483" />
+				<Hotspot X="-3253.68" Y="2027.309" Z="74.6331" />
+				<Hotspot X="-3189.622" Y="2051.668" Z="90.10921" />
+			</Hotspots>
+		</Objective>
+		<Objective Type="KillMob" MobId="20872" KillCount="5">
+			<Hotspots>
+				<Hotspot X="-3230.348" Y="2128.324" Z="78.15877" />
+				<Hotspot X="-3277.802" Y="2121.49" Z="85.60871" />
+				<Hotspot X="-3273.299" Y="2055.246" Z="71.41824" />
+				<Hotspot X="-3295.857" Y="1983.767" Z="51.50095" />
+				<Hotspot X="-3350.91" Y="2003.947" Z="32.30483" />
+				<Hotspot X="-3253.68" Y="2027.309" Z="74.6331" />
+				<Hotspot X="-3189.622" Y="2051.668" Z="90.10921" />
+			</Hotspots>
+		</Objective>
+	</Quest>
 
 	
 	

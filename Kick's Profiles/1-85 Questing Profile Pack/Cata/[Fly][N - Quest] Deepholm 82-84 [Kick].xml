@@ -1044,9 +1044,10 @@
 		
 		<!-- Alliance Quests that lead to Uldum -->
 		<If Condition="(Me.IsAlliance)" >
-		
+		<!--		
 		<PickUp QuestName="The Explorers" GiverName="Earthcaller Yevaa" QuestId="27952" GiverId="42573" />
 		<TurnIn QuestName="The Explorers" TurnInName="Explorer Mowi" QuestId="27952" TurnInId="44799" />
+		-->
 		<PickUp QuestName="Fly Over" QuestId="27006" GiverName="Prospector Brewer" GiverId="44802" />
 		<Pickup QuestName="The Twilight Plot" QuestId="27004" GiverName="Explorer Mowi" GiverId="44799" GiverType="NPC" />
 			<If Condition="((HasQuest(27006)) &amp;&amp; (!IsQuestCompleted(27006)))" >

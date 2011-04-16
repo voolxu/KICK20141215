@@ -30,49 +30,10 @@
 
 	<Mailboxes>
 		<Mailbox X="-2670.931" Y="7288.093" Z="36.30991" /> <!-- Nagrand -->
-		<Mailbox X="-4055.459" Y="2179.535" Z="110.2131" /> <!-- SMV -->
-		<Mailbox X="-706.6517" Y="2699.225" Z="94.43571" />
-		<Mailbox X="-197.3626" Y="5505.807" Z="22.53568" />
-		<Mailbox X="-2930.488" Y="4008.443" Z="-1.354151" />
-		<Mailbox X="-1774.782" Y="5174.06" Z="-40.2085" />
-		<Mailbox X="194.057" Y="4326.619" Z="116.6893" />
-		<Mailbox X="1028.854" Y="7361.791" Z="36.41585" />
-		<Mailbox X="-2929.666" Y="4006.84" Z="-1.355859" />
-		<Mailbox X="-2672.021" Y="7286.359" Z="36.3546" />
-		<Mailbox X="3017.663" Y="5450.682" Z="146.3757" />
-		<Mailbox X="1936.454" Y="5546.771" Z="266.3495" />
-		<Mailbox X="2081.724" Y="6879.212" Z="179.9368" />
-		<Mailbox X="3054.786" Y="3687.302" Z="142.5997" />
 	</Mailboxes>
  
 	<Vendors>
-		<Vendor Name="Caregiver Isel" Entry="18914" Type="Food" X="-2761.415" Y="7300.421" Z="43.4711" />
-		<Vendor Name="Sparik" Entry="19012" Type="Repair" X="-2541.9" Y="7364.772" Z="6.949437" />
-		<Vendor Name="Mari Stonehand" Entry="19373" Type="Repair" X="-3966.329" Y="2201.351" Z="101.8696" />
-		<Vendor Name="Kerpow Blastwrench" Entry="22491" Type="Repair" X="2955.032" Y="1802.131" Z="139.1211" />
-		<Vendor Name="Wind Trader Tuluman" Entry="20112" Type="Repair" X="4045.836" Y="3553.271" Z="121.3136" />
-		<Vendor Name="Apprentice Andrethan" Entry="20463" Type="Repair" X="2290.125" Y="2266.04" Z="93.63638" />
-		<Vendor Name="Siflaed Coldhammer" Entry="20890" Type="Repair" X="-2844.427" Y="5050.748" Z="-18.12777" />
-		<Vendor Name="Markus Scylan" Entry="22227" Type="Repair" X="-707.8071" Y="2716.121" Z="94.73695" />
-		<Vendor Name="Sid Limbardi" Entry="16826" Type="Food" X="-708.8713" Y="2739.131" Z="94.7337" />
-		<Vendor Name="Caregiver Ophera Windfury" Entry="18906" Type="Food" X="229.118" Y="4333.729" Z="119.0834" />
-		<Vendor Name="Provisioner Anir" Entry="16798" Type="Food" X="95.04395" Y="4292.254" Z="101.8884" />
-		<Vendor Name="Talaara" Entry="19001" Type="Repair" X="105.5018" Y="4337.619" Z="101.466" />
-		<Vendor Name="Fedryen Swiftspear" Entry="17904" Type="Repair" X="-198.9696" Y="5490.686" Z="21.84628"/>
-		<Vendor Name="Innkeeper Coryth Stoktron" Entry="18907" Type="Food" X="-174.478" Y="5529.211" Z="29.40756" />
-		<Vendor Name="Innkeeper Kerp" Entry="18908" Type="Food" X="1056.379" Y="7370.99" Z="39.58458" />
-		<Vendor Name="Innkeeper Biribi" Entry="19296" Type="Food" X="-2917.881" Y="4021.484" Z="0.4283262" />
-		<Vendor Name="Cecil Meyers" Entry="19056" Type="Repair" X="-2978.951" Y="4033.115" Z="3.573919" />
-		<Vendor Name="Aaron Hollman" Entry="19662" Type="Repair" X="-2099.772" Y="5298.396" Z="-37.32356" />
-		<Vendor Name="Sharrubo" Entry="19182" Type="Food" X="-1769.024" Y="5152.543" Z="-37.20408" />
-		<Vendor Name="Xerintha Ravenoak" Entry="20916" Type="Food" X="2949.437" Y="5456.5" Z="146.2315" />
-		<Vendor Name="Zinyen Swiftstrider" Entry="20917" Type="Repair" X="3023.432" Y="5504.725" Z="145.7471" />
-		<Vendor Name="Fizit &quot;Doc&quot; Clocktock" Entry="21110" Type="Food" X="1944.855" Y="5537.872" Z="266.651" />
-		<Vendor Name="Bossi Pentapiston" Entry="21112" Type="Repair" X="1910.417" Y="5548.362" Z="263.9332" />
-		<Vendor Name="Innkeeper Shaunessy" Entry="19495" Type="Food" X="2098.176" Y="6903.917" Z="183.2305" />
-		<Vendor Name="Cahill" Entry="19499" Type="Repair" X="2100.732" Y="6797.837" Z="175.6132" />
-		<Vendor Name="Gant" Entry="19572" Type="Food" X="3073.644" Y="3656.375" Z="143.0913" />
-		<Vendor Name="Blazzle" Entry="28344" Type="Repair" X="3063.406" Y="3677.57" Z="142.6772" />
+		<Vendor Name="Paulsta'ats" Entry="23007" Type="Repair" X="-2054.747" Y="8609.072" Z="22.16219" />
 	</Vendors>
 
 	<Quest Name="Now That We're Still Friends..." Id="9726">

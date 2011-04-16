@@ -15,7 +15,7 @@
 	<MailWhite>True</MailWhite>
 	<MailGreen>True</MailGreen>
 	<MailBlue>True</MailBlue>
-	<MailPurple>True</MailPurple>  
+	<MailPurple>True</MailPurple> 
 	
 	<ContinentId>1</ContinentId>
 
@@ -105,6 +105,11 @@
 	<QuestOrder>
 			<!-- This will stop the bot after you're Exalted -->
 			<If Condition="Me.GetReputationLevelWith(589) == Styx.WoWUnitReaction.Exalted" >
+			
+			  <If Condition="Me.GetReputationLevelWith(576) &lt; Styx.WoWUnitReaction.Exalted" >
+				<CustomBehavior File="LoadProfile" ProfileName="..\Classic\Timbermaw Rep [Kick]\[QO] Timbermaw Rep - Winterspring B [Kick]" />
+			  </If>
+			
 				<CustomBehavior File="UserDialog" Title="title" AllowBotStop="True" SoundCue="Asterisk" SoundCueInterval="1" Text="You have reached Exalted\nIf you liked this profile, +rep is always appreciated" />
 			<!-- <Hotspot X="6814.354" Y="-2084.288" Z="626.8592" /> timber maw in felwood -->
 			</If>

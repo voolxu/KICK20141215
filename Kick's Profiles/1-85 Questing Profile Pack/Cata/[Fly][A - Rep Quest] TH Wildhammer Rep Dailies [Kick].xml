@@ -17,6 +17,20 @@
 	<SellBlue>False</SellBlue>
 	
 	<TargetElites>False</TargetElites>
+	
+	<Blackspots>
+		<Blackspot X="-3187.637" Y="-5051.431" Z="120.5044" Radius="3.215476" />
+		<Blackspot X="-4464.373" Y="-4355.637" Z="322.3997" Radius="5.291939" />
+		<Blackspot X="-4470.015" Y="-4365.385" Z="323.4476" Radius="8.171865" />
+		<Blackspot X="-4470.494" Y="-4344.559" Z="324.4923" Radius="6.656543" />
+		<Blackspot X="-4345.01" Y="-4160.042" Z="330.6165" Radius="35.02598" />
+		<Blackspot X="-4742.982" Y="-4231.451" Z="388.6737" Radius="72.50719" Height="45.43324" />
+		<Blackspot X="-4894.418" Y="-4201.325" Z="425.4089" Radius="117.7542" />
+		<Blackspot X="-4324.718" Y="-4607.72" Z="164.2688" Radius="39.3668" Height="14.42256" />
+		<Blackspot X="-4104.871" Y="-4832.733" Z="106.6524" Radius="11.26585" />
+		<Blackspot X="-4044.171" Y="-4909.552" Z="90.73296" Radius="26.49721" />
+		<Blackspot X="-4061.168" Y="-4872.312" Z="106.8161" Radius="15.97308" Height="20" />
+	</Blackspots>
 
 	<Quest Id="28861" Name="Fight Like a Wildhammer">
 		<Objective Type="CollectItem" ItemId="62330" CollectCount="10">

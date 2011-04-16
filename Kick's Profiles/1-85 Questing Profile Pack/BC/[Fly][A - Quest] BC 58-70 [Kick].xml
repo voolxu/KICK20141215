@@ -1901,8 +1901,8 @@
 			<If Condition="(HasQuest(9732))" >
 				<CustomBehavior File="FlyTo" X="-143.4519" Y="5533.816" Z="31.06601" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
-			</If>
 		<TurnIn QuestName="Return to the Marsh" QuestId="9732" TurnInName="Ysiel Windsinger" TurnInId="17841" X="-143.4519" Y="5533.816" Z="31.06601" />
+			</If>
 		<!-- Not picking up Failed Incursion - dungeon quests -->
 		<TurnIn QuestName="Plants of Zangarmarsh" QuestId="9802" TurnInName="Lauranna Thar'well" TurnInId="17909" X="-215.5434" Y="5437.267" Z="21.4277" />
 		<TurnIn QuestName="A Damp, Dark Place" QuestId="9788" TurnInName="Ikeyen" TurnInId="17956" X="-215.1667" Y="5433.431" Z="21.9556" />
@@ -3864,7 +3864,7 @@
 			</If>
 		<TurnIn QuestName="Potential Energy Source" TurnInName="Lieutenant-Sorcerer Morran" QuestId="10239" TurnInId="19489" />
 		<PickUp QuestName="Building a Perimeter" QuestId="10240" GiverName="Lieutenant-Sorcerer Morran" GiverId="19489" />
-			<If Condition="((HasQuest(10240)) &amp;&amp; (!IsQuestCompleted(10240)))" >
+			<While Condition="((HasQuest(10240)) &amp;&amp; (!IsQuestCompleted(10240)))" >
 				<CustomBehavior File="FlyTo" X="2377.944" Y="2283.681" Z="135.607" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 				<CustomBehavior File="WaitTimer" WaitTime="2000" />
@@ -3879,7 +3879,7 @@
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 				<CustomBehavior File="WaitTimer" WaitTime="2000" />
 				<UseItem QuestName="Building a Perimeter" QuestId="10240" ItemId="28725" X="2257.617" Y="2455.661" Z="99.40593" />
-			</If>
+			</While>
 			<If Condition="((HasQuest(10240)) &amp;&amp; (IsQuestCompleted(10240)))" >
 				<CustomBehavior File="FlyTo" X="2251.079" Y="2277.055" Z="97.76612" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
@@ -4364,7 +4364,13 @@
 			</If>
 		<PickUp QuestName="A Not-So-Modest Proposal" GiverName="Wind Trader Marid" QuestId="10270" GiverId="20071" />
 		<PickUp QuestName="Electro-Shock Goodness!" GiverName="Researcher Navuud" QuestId="10411" GiverId="20449" />
+			<If Condition="Me.Level &gt;= 70" >
+			<If Condition="((!HasQuest(10339)) &amp;&amp; (!IsQuestCompleted(10339)))" >
+				<CustomBehavior File="FlyTo" X="4279.22" Y="2217.116" Z="125.0071" />
+				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
+			</If>
 		<PickUp QuestName="The Ethereum" GiverName="Commander Ameer" QuestId="10339" GiverId="20448" />
+			</If>
 		<PickUp QuestName="Captain Tyralius" QuestId="10422" GiverName="Flesh Handler Viridius" GiverId="20450" />
 		<PickUp QuestName="Recipe for Destruction" GiverName="Professor Dabiri" QuestId="10437" GiverId="20907" />
 			<If Condition="((!HasQuest(10345)) &amp;&amp; (!IsQuestCompleted(10345)))" >
@@ -4387,7 +4393,7 @@
 				<CustomBehavior File="SetPullDistance" Distance="35" />
 				<CustomBehavior File="FlyTo" X="4004.868" Y="1507.521" Z="-116.7939" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
-				<CustomBehavior File="InteractWith" QuestId="10422" ObjectType="Gameobject" NpcId="184073" NumOfTimes="1" GossipOption="1" CollectionDistance="50" X="4005.519" Y="1521.117" Z="-115.3977" />
+				<CustomBehavior File="InteractWith" QuestId="0" ObjectType="Gameobject" NpcId="184073" NumOfTimes="1" GossipOption="1" CollectionDistance="50" X="4005.519" Y="1521.117" Z="-115.3977" />
 			</If>
 		<TurnIn QuestName="A Not-So-Modest Proposal" TurnInName="Image of Wind Trader Marid" QuestId="10270" TurnInId="20518" X="4008.063" Y="1515.283" Z="-115.95" />
 		<PickUp QuestName="Getting Down to Business" GiverName="Image of Wind Trader Marid" QuestId="10271" GiverId="20518" X="4008.063" Y="1515.283" Z="-115.95" />
@@ -4411,12 +4417,14 @@
 			</If>
 		<TurnIn QuestName="A Promising Start" TurnInName="Tyri" QuestId="10272" TurnInId="20110" />
 		<PickUp QuestName="Troublesome Distractions" GiverName="Tyri" QuestId="10273" GiverId="20110" />
-			<If Condition="((HasQuest(10422)) &amp;&amp; (!IsQuestCompleted(10422)))" >
+			<While Condition="((HasQuest(10422)) &amp;&amp; (!IsQuestCompleted(10422)))" >
 				<CustomBehavior File="FlyTo" X="3957.041" Y="2446.879" Z="114.2778" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
+				<CustomBehavior File="WaitTimer" WaitTime="3000" />
 				<Objective QuestName="Captain Tyralius" QuestId="10422" Type="CollectItem" ItemId="29742" CollectCount="1" />
 				<CustomBehavior File="InteractWith" QuestId="10422" ObjectType="Gameobject" NpcId="184588" NumOfTimes="1" CollectionDistance="20" X="3914.262" Y="2509.536" Z="104.9604" />
-			</If>
+				<CustomBehavior File="WaitTimer" WaitTime="3000" />
+			</While>
 			<If Condition="((HasQuest(10411)) &amp;&amp; (!IsQuestCompleted(10411)))" >
 				<CustomBehavior File="FlyTo" X="4168.458" Y="1988.64" Z="207.2185" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
@@ -4447,24 +4455,29 @@
 				<GrindTo Condition="(IsQuestCompleted(10411))" GoalText="Kill 30 somethings" />
 			<Objective QuestName="Electro-Shock Goodness!" QuestId="10411" Type="KillMob" KillCount="30" MobId="20805" />
 			</If>
-			<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="5" MobId="20452" />
-			<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="5" MobId="20453" />
-			<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="2" MobId="20456" />
-			<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="1" MobId="20727" />
+			<If Condition="((HasQuest(10339)) &amp;&amp; (!IsQuestCompleted(10339)))" >
+				<CustomBehavior File="FlyTo" X="3817.87" Y="2428.348" Z="110.5376" />
+				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
+				
+				<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="5" MobId="20452" />
+				<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="5" MobId="20453" />
+				<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="2" MobId="20456" />
+				<Objective QuestName="The Ethereum" QuestId="10339" Type="KillMob" KillCount="1" MobId="20727" />
+			</If>
 			<If Condition="((HasQuest(10339)) &amp;&amp; (IsQuestCompleted(10339)))" >
 				<CustomBehavior File="FlyTo" X="4017.812" Y="2319.489" Z="114.355" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 				<CustomBehavior File="InteractWith" QuestId="10273" ObjectType="Gameobject" NpcId="184383" NumOfTimes="1" CollectionDistance="50" X="4017.812" Y="2319.489" Z="114.355" />
-			</If>
 		<TurnIn QuestName="The Ethereum" TurnInName="Image of Commander Ameer" QuestId="10339" TurnInId="20482" />
 		<PickUp QuestName="Ethereum Data" GiverName="Image of Commander Ameer" QuestId="10384" GiverId="20482" />
+			</If>
 			<While Condition="((HasQuest(10384)) &amp;&amp; (!IsQuestCompleted(10384)))" >
 				<CustomBehavior File="InteractWith" QuestId="10384" ObjectType="Gameobject" NpcId="184560" NumOfTimes="1" CollectionDistance="200" X="3969.117" Y="2370.976" Z="113.0475" />
 			</While>
 			<If Condition="((HasQuest(10384)) &amp;&amp; (IsQuestCompleted(10384)))" >
 				<CustomBehavior File="InteractWith" QuestId="10273" ObjectType="Gameobject" NpcId="184383" NumOfTimes="1" CollectionDistance="50" X="4017.812" Y="2319.489" Z="114.355" />
-			</If>
 		<TurnIn QuestName="Ethereum Data" TurnInName="Image of Commander Ameer" QuestId="10384" TurnInId="20482" />
+			</If>
 		<!-- this one is a bit tricky because I have to collect a vial, then use it, then kill the 15 guys, but the vial only lasts 60 seconds on me (buff) so i need a hasaura CB
 		<PickUp QuestName="Potential for Brain Damage = High" GiverName="Image of Commander Ameer" QuestId="10385" GiverId="20482" />
 			<Objective QuestName="Potential for Brain Damage = High" QuestId="10385" Type="Collect" CollectCount="15" ItemId="29459" />
@@ -4538,7 +4551,7 @@
 			</If>
 		<PickUp QuestName="Visions of Destruction" GiverName="Seer Jovar" QuestId="11044" GiverId="23268" />
 			<If Condition="(HasQuest(11044))" >
-				<CustomBehavior File="FlyTo" X="-3919.216" Y="2048.247" Z="95.18011" />
+				<CustomBehavior File="FlyTo" X="-3919.216" Y="2048.247" Z="95.18011" Name="SMV" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 			</If>
 		<TurnIn QuestName="Visions of Destruction" TurnInName="Wing Commander Nuainn" QuestId="11044" TurnInId="21357" />
