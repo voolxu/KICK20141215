@@ -4,7 +4,6 @@
 
 
 	<Blackspots>
-
 	</Blackspots>
 	<AvoidMobs>
 	</AvoidMobs>
@@ -52,6 +51,7 @@
 				<CustomBehavior File="FlyTo" 
 				<CustomBehavior File="MyCTM" 
 				<CustomBehavior File="WaitTimer" WaitTime="2000" />
+				<CustomBehavior File="Message" Text="" LogColor="Red" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 				<CustomBehavior File="UseItemOn" QuestId="" NpcId="" ItemId="" NumOfTimes="1" WaitTime="1000" Range="5" CollectionDistance="50" 
 				<CustomBehavior File="CombatUseItemOn" QuestId="" NpcId="" ItemId="" NumOfTimes="1" WaitTime="1000" NpcHPLeft="100" CollectionDistance="500" 

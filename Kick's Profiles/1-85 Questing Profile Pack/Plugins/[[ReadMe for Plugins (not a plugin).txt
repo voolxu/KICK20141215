@@ -10,4 +10,10 @@ OpenThatStuff is for EPL where you get a lot of bags, so if you're not near you 
 
 OpenThatStuff is also for the PvP dailies in TB Peninsula - It's used for the quest "How Magnets Work"
 
+OpenThatStuff is also for the Netherwing Rep Profile
+
 Thundermare Ale Keg is for Wildhammer dailies (Twilight Highlands)
+
+Sha'tari Helper is for the Sha'tari Skyguard rep profile
+
+NetherwingCollector is for the Netherwing rep profile

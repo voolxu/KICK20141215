@@ -69,7 +69,7 @@
 
 	<QuestOrder>
 	
-				<CustomBehavior File="UserSettings" LootMobs="True" PullDistance="35" TrainNewSkills="False" LearnFlightPaths="True" />
+	<CustomBehavior File="UserSettings" LootMobs="True" PullDistance="35" TrainNewSkills="False" LearnFlightPaths="False" KillBetweenHotspots="True" LogoutForInactivity="False" />
 				
 			<!-- Farming for Oshu'gun Crystal Fragments - 10 for each turnin, we're getting 24+ per "run" -->
 			<While Condition="Me.GetReputationLevelWith(933) &lt; Styx.WoWUnitReaction.Friendly" >
@@ -211,4 +211,5 @@
 			</If>
 	
 	</QuestOrder>
+
 </HBProfile>

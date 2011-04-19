@@ -116,10 +116,12 @@
    	
 	<QuestOrder>
 	
-				<CustomBehavior File="SetPullDistance" Distance="20" />
 	
 			<!-- Grind to Friendly -->
 			<If Condition="Me.GetReputationLevelWith(970) &lt; Styx.WoWUnitReaction.Friendly" >
+	
+	<CustomBehavior File="UserSettings" LootMobs="True" PullDistance="20" TrainNewSkills="False" LearnFlightPaths="False" KillBetweenHotspots="True" LogoutForInactivity="False" />
+	
 			<If Condition="((!HasQuest(9739)) &amp;&amp; (!IsQuestCompleted(9739)))" >
 				<CustomBehavior File="FlyTo" X="-214.1056" Y="8514.414" Z="22.89437" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
@@ -182,6 +184,7 @@
 				</If>
 			
 			
+	<CustomBehavior File="UserSettings" LootMobs="False" PullDistance="20" TrainNewSkills="False" LearnFlightPaths="False" KillBetweenHotspots="True" LogoutForInactivity="False" />
 			
 			<!-- Non-repeatable quest pre-req avail at friendly -->
 			<If Condition="((!HasQuest(9726)) &amp;&amp; (!IsQuestCompleted(9726)))" >
@@ -192,8 +195,8 @@
 			<If Condition="((HasQuest(9726)) &amp;&amp; (!IsQuestCompleted(9726)))" >
 				<CustomBehavior File="FlyTo" X="572.5067" Y="8188.215" Z="18.86026" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
-				<Objective QuestName="Now That We're Friends..." QuestId="9727" Type="KillMob" MobId="18089" KillCount="12" />
-				<Objective QuestName="Now That We're Friends..." QuestId="9727" Type="KillMob" MobId="18088" KillCount="6" />
+				<Objective QuestName="Now That We're Friends..." QuestId="9726" Type="KillMob" MobId="18089" KillCount="12" />
+				<Objective QuestName="Now That We're Friends..." QuestId="9726" Type="KillMob" MobId="18088" KillCount="6" />
 			</If>
 			<If Condition="((HasQuest(9726)) &amp;&amp; (IsQuestCompleted(9726)))" >
 				<CustomBehavior File="FlyTo" X="254.0195" Y="8503.667" Z="22.98337" />
@@ -223,12 +226,13 @@
 				<CustomBehavior File="FlyTo" X="254.0195" Y="8503.667" Z="22.98337" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 		<TurnIn QuestName="Now That We're Friends..." QuestId="9727" TurnInName="Gzhun'tt" TurnInId="17856" />
-			</If>
 			<CustomBehavior File="WaitTimer" WaitTime="2000"/>
 		<PickUp QuestName="Now That We're Still Friends..." QuestId="9727" GiverName="Gzhun'tt" GiverId="17856" />
+			</If>
 			
 			<!-- If you rename this profile, you have to rename the Profile="" -->
 			<CustomBehavior File="LoadProfile" ProfileName="[QO] Sporeggar Rep A [Kick].xml" />
 	
 	</QuestOrder>
+
 </HBProfile>

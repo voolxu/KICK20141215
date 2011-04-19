@@ -693,8 +693,8 @@
 				<RunTo X="5041.604" Y="-2045.529" Z="1367.594" />
 				<RunTo X="5030.838" Y="-2034.758" Z="1370.652" /> 
 				<CustomBehavior File="SetPullDistance" Distance="35" />
-			</If>
 		<TurnIn QuestName="Into the Maw!" QuestId="25617" TurnInName="Jordan Olafson" TurnInId="40834" />
+			</If>
 	  </If>
 		<!-- /Horde -->
 		

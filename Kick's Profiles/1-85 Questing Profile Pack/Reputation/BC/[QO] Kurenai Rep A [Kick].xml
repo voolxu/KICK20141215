@@ -69,7 +69,7 @@
 
 	<QuestOrder>
 	
-				<CustomBehavior File="UserSettings" LootMobs="True" PullDistance="35" TrainNewSkills="False" LearnFlightPaths="True" />
+	<CustomBehavior File="UserSettings" LootMobs="True" PullDistance="35" TrainNewSkills="False" LearnFlightPaths="False" KillBetweenHotspots="True" LogoutForInactivity="False" />
 				
 			<!-- Grind to Neutral -->
 			<If Condition="Me.GetReputationLevelWith(978) &lt; Styx.WoWUnitReaction.Neutral" >
@@ -112,7 +112,7 @@
 			<!-- Once Neutral, do the first beads quest -->
 			<If Condition="Me.GetReputationLevelWith(978) &gt;= Styx.WoWUnitReaction.Neutral" >
 			<If Condition="((!HasQuest(10476)) &amp;&amp; (!IsQuestCompleted(10476)))" >
-				<CustomBehavior File="FlyTo" X="-2567.123" Y="7269.978" Z="15.44274" />v
+				<CustomBehavior File="FlyTo" X="-2567.123" Y="7269.978" Z="15.44274" />
 				<CustomBehavior File="ForcedDismount" QuestId="0" MountType="Any" />
 			</If>
 		<PickUp QuestName="Fierce Enemies" QuestId="10476" GiverName="Warden Moi'bff Jill" GiverId="18408" X="-2565.826" Y="7274.235" Z="15.47992" />
@@ -182,4 +182,5 @@
 			</If>
 	
 	</QuestOrder>
+
 </HBProfile>

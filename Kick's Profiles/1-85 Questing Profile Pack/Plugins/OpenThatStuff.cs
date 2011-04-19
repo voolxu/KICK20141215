@@ -30,10 +30,11 @@ namespace OpenThatStuff
         private readonly Version _version = new Version(1, 0, 0, 0);
 
         private static uint[,] _data = new uint[,] { 
-           {1, 35792}, // Mage Hunter Personal Effects for Quest(12000)
-		   {1, 20767}, // Scum Covered Bag
-		   {1, 61387}, // Hidden Stash
-		{1, 62829}, // Magnetized Scrap Collector		
+			{1, 35792}, // Mage Hunter Personal Effects for Quest(12000)
+			{1, 20767}, // Scum Covered Bag
+			{1, 61387}, // Hidden Stash
+			{1, 62829}, // Magnetized Scrap Collector
+			{1, 32724}, // Sludge Covered Object
         };
 
         private static Stopwatch sw = new Stopwatch();
