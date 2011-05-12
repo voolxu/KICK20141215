@@ -236,7 +236,7 @@
 		<TurnIn QuestName="A Worthy Weapon" QuestId="13758" TurnInName="Jaelyne Evensong" TurnInId="33592" />
 			</If>
 			<If Condition="((HasQuest(13741)) &amp;&amp; (IsQuestCompleted(13741)))" >
-		<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13741" TurnInName="Ambrose Boltspark" TurnInId="33335" />
+		<TurnIn QuestName="A Blade Fit For A Champion" QuestId="13741" TurnInName="Lana Stouthammer" TurnInId="33312" />
 			</If>
 
 			<!-- Eadric quests -->
